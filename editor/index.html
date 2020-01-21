@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lvl1</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="window">
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <br>
+        <div class="mainbtns">
+            <form action="#" name="control">
+                <input type="button" value="edit" name="Editbtn" style="background-color: yellow; color: black">
+                <input type="button" value="style" name="Stylebtn" style="background-color: #0f6691; color: white;"> </form>
+        </div>
+
+        <div class="option">
+            <div class="editbox otherbtns">
+                <form action="#" name="editform">
+                    <textarea name="txt" cols="120" rows="10" style="border: 1px solid grey; border-radius: 10px; background: white"></textarea>
+                    <br>
+                    <input type="button" value="Save" name="savebtn" style="background-color: green">
+                    <input type="button" value="Add text" name="addbtn" style="background-color: red">
+                    <input type="button" value="Add table/list" name="addproperbtn" style="background-color: coral; width: 100px">
+                     <input type="button" value="Reset" name="rstbtn" style="background-color: black">
+                      </form>
+            </div>
+
+            <div class="stylebox">
+                <form action="#" name="textsize">
+                    <label class="textEdit">Font size:</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="r" value="12pt">12pt</label>
+                    <label>
+                        <input type="radio" name="r" value="14pt">14pt</label>
+                    <label>
+                        <input type="radio" name="r" value="16pt">16pt</label>
+                    <label>
+                        <input type="radio" name="r" value="18pt">18pt</label>
+                    <label>
+                        <input type="radio" name="r" value="20pt">20pt</label>
+                </form>
+
+                <form action="#" name="texttype">
+                    <label class="textEdit">Font Family:</label>
+                    <br>
+                    <select name='ligalist'>
+                        <option name="s" value="Choose option">Choose option</option>
+                        <option name="s" value="cursive">cursive</option>
+                        <option name="s" value="fantasy">fantasy</option>
+                        <option name="s" value="monospase">monospase</option>
+                        <option name="s" value="sens-serif">sens-serif</option>
+                    </select>
+                </form>
+
+                <form action="#" name="color">
+                    <label class="textEdit">Colors:</label>
+                    <br>
+                    <label class="colorbtns">
+                        <input type="button" name="txtcolor" value="Color of Text">
+                    </label>
+                    <label class="colorbtns">
+                        <input type="button" name="bgcolor" value="Background color">
+                    </label>
+                    <p class="reset">
+                        <input type="button" name="closesb" value="Reset">
+                    </p>
+
+                    <table id="colorbox">
+                        <tr>
+                            <td class='colorboxlist' style='background: red; color: red'></td>
+                            <td class='colorboxlist' style='background: #0B7AE9; color: #0B7AE9'></td>
+                            <td class='colorboxlist' style='background: green; color: green'></td>
+                        </tr>
+                        <tr>
+                            <td class='colorboxlist' style='background: black; color: black'></td>
+                            <td class='colorboxlist' style='background: orange; color: orange'></td>
+                            <td class='colorboxlist' style='background: deeppink; color: deeppink'></td>
+                        </tr>
+                        <tr>
+                            <td class='colorboxlist' style='background: white; color: white'></td>
+                            <td class='colorboxlist' style='background: purple; color: purple'></td>
+                            <td class='colorboxlist' style='background: #1F75CA; color: #1F75CA'></td>
+                        </tr>
+                    </table>
+
+                    <table id="colorboxbg">
+                        <tr>
+                            <td class='bgcolorlist' style='background: red'></td>
+                            <td class='bgcolorlist' style='background: #0B7AE9'></td>
+                            <td class='bgcolorlist' style='background: green'></td>
+                        </tr>
+                        <tr>
+                            <td class='bgcolorlist' style='background: black'></td>
+                            <td class='bgcolorlist' style='background: orange'></td>
+                            <td class='bgcolorlist' style='background: deeppink'></td>
+                        </tr>
+                        <tr>
+                            <td class='bgcolorlist' style='background: white'></td>
+                            <td class='bgcolorlist' style='background: purple'></td>
+                            <td class='bgcolorlist' style='background: #1F75CA'></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <form action="#" name="bolder">
+                    <label>
+                        <input type="checkbox" name="boldtxt" value="bold">Bold text</label>
+                    <label>
+                        <input type="checkbox" name="italictxt" value="italic">Cursive text</label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="addtable">
+        <h1> Choose what do you want:</h1>
+        <form action="#" name="chsoption">
+            <p> <label>
+                    <input type="radio" checked value="table" name="r" id="table">Table</label>
+                <label>
+                    <input type="radio" value="list" name="r" id="list">List</label>
+            </p>
+        </form>
+
+        <div class="optiontable">
+            <form action="#" name="chsnumberline">
+                <p>Count TR:
+                    <input type="text" class="border" name="nmbrrows"><span id="spanred"> wrong</span> </p>
+                <p>Count TD:
+                    <input type="text" class="border" name="nmbrcolumn"><span id="spanred"> wrong</span> </p>
+            </form>
+
+            <h2>Add style to your table:</h2>
+            <form action="#" name="sizecell">
+                <p>Width of TD:
+                    <input type="text" class="border" name="widthcell"><span id="spanred"> wrong</span> </p>
+                <p>Height of TD:
+                    <input type="text" class="border" name="heightcell"><span id="spanred"> wrong</span> </p>
+            </form>
+
+            <form action="#" name="stylizeline">
+                <span>Width of border:
+                    <input type="text" class="border_1" name="sizeline">
+                    <span id="spanred_1"> wrong</span> 
+                    </span>
+                <span>
+                    <label>Type of border:</label>
+                    <label>
+                        <select name='linetype' class="border_1">
+                            <option name="s" value="solid">solid</option>
+                            <option name="s" value="dashed">dashed</option>
+                            <option name="s" value="double">double</option>
+                            <option name="s" value="dotted">dotted</option>
+                        </select>
+                    </label></span>
+                <span> <label>Color of border:</label>
+                    <label>
+                        <select name='colortp' class="border_1">
+                            <label>
+                                <option name="r" value="black">black</option>
+                            </label>
+                            <label>
+                                <option name="r" value="red">red</option>
+                            </label>
+                            <label>
+                                <option name="r" value="blue">blue</option>
+                            </label>
+                            <label>
+                                <option name="r" value="green">green</option>
+                            </label>
+
+                        </select>
+                    </label>
+                </span>
+            </form>
+
+            <form action="#" name="submit" class="otherbtns">
+                <p>
+                    <input type="button" value="Create table" name="tablebtn" style="background-color: green; width: 100px">
+                </p>
+            </form>
+        </div>
+        <div class="listoption">
+            <form action="#" name="listitems">
+                <p>Count of Li:
+                    <input type="text" class="border" name="numerosity"><span id="spanred"> wrong</span>
+                </p>
+            </form>
+            <form action="#" name="typelist">
+                <p> <label>Type of marks:</label>
+                    <label>
+                        <select name="chstypelist" class="border">
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                    </label></p>
+            </form>
+
+            <form action="#" name="listbtn" class="otherbtns">
+                <p>
+                    <input type="button" name="listbtnsub" value="create list" style="background-color: green; width: 100px">
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body></html>
